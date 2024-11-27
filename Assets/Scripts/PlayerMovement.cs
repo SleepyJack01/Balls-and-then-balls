@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Scripting.APIUpdating;
@@ -7,7 +8,7 @@ using UnityEngine.Scripting.APIUpdating;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] private Rigidbody rb;
+    [SerializeField] public Rigidbody rb;
     
     [Header("Movement")]
     [SerializeField] private float moveForce = 10f;
@@ -23,4 +24,5 @@ public class PlayerMovement : MonoBehaviour
     {
         moveDirection = context.ReadValue<Vector2>();
     }
+
 }
