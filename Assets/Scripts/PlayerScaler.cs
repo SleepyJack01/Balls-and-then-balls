@@ -9,7 +9,7 @@ public class PlayerScaler : MonoBehaviour
     private Rigidbody playerRigidbody;
 
     [Header("Settings")]
-    private float playerScale;
+    public float playerScale;
     [SerializeField] private float playerScaleSpeed = 1.0f;
     private float playerVelocity = 0.0f;
 
